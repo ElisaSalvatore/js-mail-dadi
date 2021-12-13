@@ -19,14 +19,16 @@ if (flag) {
 
 // ESERCIZIO DADI
 //Generare numero random utente
-const humanNumber = Math.floor(Math.random() * 10);
+const humanNumber = Math.floor(Math.random() * 6) + 1;
 console.log('Numero utente: ' + humanNumber);
 //Generare numero random computer
-const computerNumber = Math.floor(Math.random() * 10);
+const computerNumber = Math.floor(Math.random() * 6) + 1;
 console.log('Numero computer: ' + computerNumber);
 
-if (humanNumber > computerNumber) {
+if (humanNumber < computerNumber) {
+    console.log('Hai perso.')
+} else if (humanNumber > computerNumber) {
     console.log('Hai vinto!')
 } else {
-    console.log('Hai perso.')
+    console.log('Pareggio.')
 }
