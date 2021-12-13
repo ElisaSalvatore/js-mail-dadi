@@ -1,3 +1,4 @@
+// ESERCIZIO MAIL
 //Definisco array di chi può effettuare l'accesso
 const listEmail = ['mariorossi@gmail.com', 'marioverdi@gmail.com', 'gianniblu@gmailcom'];
 let flag = false;
@@ -16,3 +17,16 @@ if (flag) {
     console.log('Impossibile effettuare l\'accesso.')
 }
 
+// ESERCIZIO DADI
+//Generare numero random utente
+const humanNumber = Math.floor(Math.random() * 10);
+console.log('Numero utente: ' + humanNumber);
+//Generare numero random computer
+const computerNumber = Math.floor(Math.random() * 10);
+console.log('Numero computer: ' + computerNumber);
+
+if (humanNumber > computerNumber) {
+    console.log('Hai vinto!')
+} else {
+    console.log('Hai perso.')
+}
